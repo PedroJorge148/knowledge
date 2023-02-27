@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'sans-serif']
+    },
     extend: {
       colors: {
         brand: {
@@ -10,5 +13,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }

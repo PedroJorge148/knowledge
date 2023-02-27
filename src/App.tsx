@@ -1,14 +1,13 @@
-import { NavMenu } from "./components/Nav/NavMenu"
-import { NavMenu_ } from "./components/Nav/NavMenu_"
-import { BookStock } from "./components/Stock/BookStock"
+import { BrowserRouter } from "react-router-dom"
+import { Router } from "./Router"
 
-function App() {
+import './styles/main.css'
+
+export function App() {
   return (
-    <>
-        <NavMenu />
-        <BookStock />
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
 
-export default App
